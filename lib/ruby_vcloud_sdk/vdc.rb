@@ -227,7 +227,6 @@ module VCloudSdk
         params.add_locality(connection.get(vm.href)) if vm # Use xml form of vm
         params.add_storage_profile(storage_profile) if storage_profile
       end
-      puts x
       x
     end
 
