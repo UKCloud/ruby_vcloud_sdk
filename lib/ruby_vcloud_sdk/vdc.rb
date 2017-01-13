@@ -117,7 +117,7 @@ module VCloudSdk
 
     def list_disks
       entity_xml.disks.map do |disk_link|
-        disk_link.name
+        VCloudSdk::Disk.new(@session, disk_link.href)
       end
     end
 
